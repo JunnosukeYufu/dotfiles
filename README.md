@@ -8,7 +8,7 @@
 ## ディレクトリ構成
 Neovim 0.11 の新LSP API（`vim.lsp.config`）を使用。  
 `lua-language-server` や `terraform-ls` などの LSP バイナリは、  
-環境依存を避けるため `~/.config/nvim/lsp` で手動管理。
+環境依存を避けるため `~/.config/nvim/lsp` 配下に手動配置する。
 
 ```
 ~/.config/nvim

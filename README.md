@@ -10,6 +10,7 @@ Neovim 0.11 の新LSP API（`vim.lsp.config`）を使用。
 `lua-language-server` や `terraform-ls` などの LSP バイナリは、  
 環境依存を避けるため `~/.config/nvim/lsp` で手動管理。
 
+```
 ~/.config/nvim
 ├── init.lua
 ├── lazy-lock.json
@@ -29,4 +30,4 @@ Neovim 0.11 の新LSP API（`vim.lsp.config`）を使用。
         ├── colorscheme.lua
         ├── lsp.lua
         └── telescope.lua
-
+```

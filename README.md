@@ -26,6 +26,7 @@ Neovim 0.11 の新LSP API（`vim.lsp.config`）を使用。
 └── lua
     ├── config                  
     │   ├── lazy.lua
+    │   ├── clipboard.lua
     │   └── options.lua
     └── plugins                 
         ├── colorscheme.lua

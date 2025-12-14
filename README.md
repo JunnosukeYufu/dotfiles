@@ -8,11 +8,9 @@
 
 ### 構成要素
 Neovim 0.11 の新LSP API（`vim.lsp.config`）を使用。  
-`lua-language-server` や `terraform-ls` などの LSP バイナリは、  
-環境依存を避けるため `~/.config/nvim/lsp` 配下に手動配置。
+`lua-language-server` や `terraform-ls` などの LSP バイナリは、  環境依存を避けるため `~/.config/nvim/lsp` 配下に手動配置。
 
-なおterraform-lsなどの一部のLSPは外部CLIに依存する。
-これらの補完機能を正しく使用するために、以下を導入。
+なおterraform-lsなどの一部のLSPは外部CLIに依存する。これらの補完機能を正しく使用するために、以下を導入。
 
 - terraform
 

@@ -1,10 +1,10 @@
 return {
   "neovim/nvim-lspconfig",
   config = function()
-    -- 相対パスで書くために設定
+    -- Use relative paths for configuration
     local nvim_config = vim.fn.stdpath("config")
 
-    -- LSPサーバ追加(公式コピペ)
+    -- Lua language server (copied from the official documentation)
     vim.lsp.config['lua_ls'] = {
       cmd = { nvim_config .. "/lsp/lua-language-server/bin/lua-language-server"},
       filetypes = { 'lua' },
@@ -20,13 +20,14 @@ return {
       },
     }
 
-    -- terraform-ls追加
+    -- terraform-ls
     vim.lsp.config['terraformls'] = {
       cmd = { nvim_config .. "/lsp/terraform-ls/terraform-ls", "serve" },
       filetypes = { 'terraform' },
+      root_markers = { ".terraform", ".git" },
     }
 
-    --enable許可
+    --enable
     vim.lsp.enable('lua_ls')
     vim.lsp.enable("terraformls")
   end,

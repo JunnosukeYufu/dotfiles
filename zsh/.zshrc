@@ -11,3 +11,8 @@ export HISTSIZE=100000
 export SAVEHIST=100000
 
 export PATH="$HOME/.local/bin:$PATH"
+
+if [[ -n "$WSL_DISTRO_NAME" ]]; then
+  cd ~
+fi
+export PATH=$PATH:/usr/local/go/bin

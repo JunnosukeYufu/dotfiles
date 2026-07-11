@@ -27,9 +27,17 @@ return {
       root_markers = { ".terraform", ".git" },
     }
 
+    -- go-lsp
+    vim.lsp.config["gopls"] = {
+      cmd = { "gopls" },
+      filetypes = { "go", "gomod", "gowork", "gotmpl" },
+      root_markers = { "go.work", "go.mod", ".git" },
+    }
+
     --enable
     vim.lsp.enable('lua_ls')
     vim.lsp.enable("terraformls")
+    vim.lsp.enable("gopls")
   end,
 }
 
